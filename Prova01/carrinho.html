@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleCarrinho.css">
+</head>
+<body>
+    <header>
+        <h1>Prova da Loja de Informática</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="carrinho">
+            <span id="carrinho-contagem">0</span>
+            <img src="img/cart-icon.png" alt="Carrinho de Compras">
+        </div>
+        
+    </header>
+    <main>
+        <section class="carrinho-itens">
+            <h2>Seu Carrinho</h2>
+            <div id="carrinho-container">
+                <!-- Itens do carrinho serão exibidos aqui -->
+            </div>
+            <div class="carrinho-total">
+                <h3>Total: <span id="carrinho-total">0,00</span></h3>
+            </div>
+            <button onclick="limpaCarrinho()">Limpar Carrinho</button>
+        </section>
+
+        <section class="formulario">
+            <h3>Pagamento com Cartão:</h3>
+            <label for="bandeira-do-cartao">Bandeira do Cartão:</label>
+            <input type="text" id="bandeira-do-cartao" name="bandeira-do-cartao"><br>
+
+            <label for="nome">Nome do Titular:</label>
+            <input type="text" id="nome" name="nome"><br>
+
+            <label for="numero-do-cartao">Número do Cartão:</label>
+            <input type="text" id="numero-do-cartao" name="numero-do-cartao"><br>
+
+            <label for="data-de-validade-do-cartao">Data de Validade do Cartão:</label>
+            <input type="text" id="data-de-validade-do-cartao" name="data-de-validade-do-cartao"><br>
+
+            <label for="digito-verificador-do-cartao-cvv">Digito Verificador do Cartão (CVV):</label>
+            <input type="text" id="digito-verificador-do-cartao-cvv" name="digito-verificador-do-cartao-cvv"><br><br>
+
+            <input type="submit" value="Confirmar Pagamento">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Loja de Informática - Todos os direitos reservados</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
